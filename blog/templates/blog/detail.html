@@ -1,0 +1,8 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h1>{{ blog.name }}</h1>
+<h2>--{{ blog.crt|date:'F jS Y' }}--</h2>
+<p>{{ blog.text|safe }}<p>
+
+  {% endblock %}
